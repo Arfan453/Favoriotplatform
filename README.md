@@ -58,7 +58,7 @@ Software Setup
     
     *   Open the MQTTS_Slider.ino file in the Arduino IDE.
 
-      ```bash
+      ```cpp
       #include <WiFi.h>
       #include <MQTT.h>
       #include <NetworkClientSecure.h>
