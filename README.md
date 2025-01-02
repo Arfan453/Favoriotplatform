@@ -2,19 +2,6 @@
 
 This repository demonstrates how to create and run a dashboard on the Favoriot platform to visualize real-time IoT data.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Requirements](#requirements)
-- [Setup Guide](#setup-guide)
-  - [Step 1: Configure Sensors/Devices](#step-1-configure-sensorsdevices)
-  - [Step 2: Send Data to Favoriot](#step-2-send-data-to-favoriot)
-  - [Step 3: Set Up the Dashboard](#step-3-set-up-the-dashboard)
-- [Usage](#usage)
-- [Troubleshooting](#troubleshooting)
-- [License](#license)
-
 ## Introduction
 
 This project utilizes the Favoriot platform to display IoT data from connected devices and sensors on a customizable dashboard. The dashboard is designed for real-time data visualization and analysis.
@@ -28,14 +15,12 @@ This project utilizes the Favoriot platform to display IoT data from connected d
 ## Requirements
 
 1. **Hardware**:
-   - IoT sensors or devices (e.g., BME280 sensor, photosensor, etc.).
-   - Microcontroller (e.g., Hibiscus Sense ESP32).
+   - Hibiscus Sense ESP32 microcontroller.
    - Internet connectivity.
 
 2. **Software**:
    - Favoriot account.
-   - Code editor (e.g., VS Code).
-   - MQTT client or REST API tools (e.g., Postman).
+   - Arduino IDE.
 
 3. **Libraries/Dependencies**:
    - MQTT library for microcontroller (if applicable).
@@ -45,8 +30,7 @@ This project utilizes the Favoriot platform to display IoT data from connected d
 
 ### Step 1: Configure Sensors/Devices
 
-1. Connect your sensors (e.g., BME280 or photosensor) to the microcontroller.
-2. Write and upload the code to read data from sensors and send it to Favoriot.
+1. Write and upload the code to read data from sensors and send it to Favoriot.
    - Example code snippet for sending data via MQTT:
      ```cpp
      #include <WiFi.h>
@@ -86,15 +70,7 @@ This project utilizes the Favoriot platform to display IoT data from connected d
 1. Log in to your Favoriot account.
 2. Navigate to the **Devices** section and add a new device.
 3. Copy the device ID and API key.
-4. Use MQTT or REST API to send data to Favoriot.
 
-   Example MQTT payload:
-   ```json
-   {
-       "temperature": 25.3,
-       "humidity": 60
-   }
-   ```
 
 ### Step 3: Set Up the Dashboard
 
@@ -119,7 +95,10 @@ This project utilizes the Favoriot platform to display IoT data from connected d
 - **Dashboard Widgets Not Updating**:
   - Verify the data source configuration in Favoriot.
   - Check if the data format matches Favoriot's requirements.
+ 
+  `https://platform.favoriot.com/tutorial/v2/#dashboard`
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
