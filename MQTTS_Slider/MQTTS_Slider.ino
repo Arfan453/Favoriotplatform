@@ -9,10 +9,10 @@
 #include "FavoriotCA.h"
 
 // Replace these with your Wi-Fi credentials and device information
-const char ssid[] = "favoriot@unifi";
-const char password[] = "fav0r10t2017";
-const char deviceDeveloperId[] = "Hibiscus_sense@mohdarfan453";
-const char deviceAccessToken[] = "eKb7PVhOZ2yWRfedCGWUTRL8pD3PxG2C";
+const char ssid[] = "your_wifi_ssid";
+const char password[] = "your_wifi_password";
+const char deviceDeveloperId[] = "your_device_Developer_Id";
+const char deviceAccessToken[] = "your_Access_Token";
 const char publishTopic[] = "/v2/streams";
 const char statusTopic[] = "/v2/streams/status";
 const char rpcTopic[] = "/v2/rpc";  // Topic to listen for RPC commands
